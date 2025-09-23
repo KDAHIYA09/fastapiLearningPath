@@ -4,6 +4,11 @@ from typing import Optional
 
 app = FastAPI()
 
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello from Render! FastAPI is running 🚀"}
+
 #todo try dummy
 
 #step 1 create a pydantic model for todo
